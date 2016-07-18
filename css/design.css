@@ -5757,10 +5757,10 @@ ul.normal {
   font-size: 16px;
   line-height: 1.5; }
 
-#contact .contact-section {
+.footer-section .contact-section {
   padding: 100px; }
   @media (max-width: 767px) {
-    #contact .contact-section {
+    .footer-section .contact-section {
       height: 50px; } }
 
 #fullpage .fp-controlArrow.fp-prev {
