@@ -51,12 +51,52 @@ keyword:        Product, Visualisierung, BI, Reporting
                     <h1 class="visible-print">Productspace visualisiert Ihre Productwelt!</h1>
                 </div>
             </div>
-            <div class="section bg-gray" id="section1" data-anchor="about">
-                <div class="container">
-                    <div class="slide"><h2>Simple Demo</h2></div>
-                    <div class="slide"><h2>Only text</h2></div>
-                    <div class="slide"><h2>And text</h2></div>
-                    <div class="slide"><h2>And more text</h2></div>
+            <div class="section" id="section1" data-anchor="about">
+                <div class="slide active bg-gray">
+                    <div class="container">
+                        <h2 class="text-center">Die Idee von ProductSpace</h2>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p>Digitalisierung des kreativen Beschaffungsprozess</p>
+                                <p>Im Vordergrund steht </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/illustrations/light-bulb.png" class="img-responsive">
+                            </div>
+                            <div class="col-sm-4">
+                                <p>Datenquellen können vielfältig sein.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="container">
+                        <h2 class="text-center">Datenquellen</h2>
+                        <div class="col-sm-8">
+                            <img src="images/illustrations/productspace-datasources.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-4">
+                            <p>ProductSpace kann durch mehrere Datenquellen wie z.B. der Webshop, das ERP und BI befüllt werden...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide bg-gray">
+                    <div class="container">
+                        <h2 class="text-center">Das Produkt/Bild steht im Vordergrund</h2>
+                        <img src="images/illustrations/productspace-mockup-browse.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="container">
+                        <h2 class="text-center">Mobil und immer Dabei</h2>
+                        <img src="images/illustrations/productspace-mobile.png" class="img-responsive">
+                    </div>
+                </div>
+                <div class="slide bg-gray">
+                    <div class="container">
+                        <h2 class="text-center">Kommunikativ</h2>
+                        <img src="images/illustrations/productspace-teamwork.png" class="img-responsive">
+                    </div>
                 </div>
             </div>
             <div class="section fp-auto-height bg-dark footer-section" id="section2" data-anchor="contact">
@@ -114,7 +154,10 @@ keyword:        Product, Visualisierung, BI, Reporting
                     .ready(function () {
                         $('#fullpage')
                                 .fullpage({
-                                    css3: true
+                                    css3: true,
+                                    slidesNavigation: true,
+                                    navigationTooltips: ['Die Idee', 'Datenquellen', 'Anwendung', 'Mobile', 'Kommunikation'],
+                                    showActiveTooltip: true
                                 });
                     });
         </script>
