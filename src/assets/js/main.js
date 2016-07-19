@@ -8,15 +8,7 @@
 
         // aktivate Tooltips
         $('[data-toggle="tooltip"]').tooltip();
-
-
-        $.scrollUp({
-            animation: 'fade',
-            scrollDistance: 400,
-            scrollText: '<i class="fa fa-angle-up"></i>',
-            scrollTitle: 'Scroll to top'
-        });
-
+        
     });
 
     // Cookie Banner
