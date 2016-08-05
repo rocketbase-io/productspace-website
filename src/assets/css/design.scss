@@ -55,11 +55,11 @@ nav.navbar {
   li.only-in-collapse {
     display: none;
 
-    @media (max-width: ($screen-sm-min - 1px)) {
+    @media (max-width: $screen-xs-max) {
       display: inline-block;
     }
   }
-  @media (max-width: ($screen-sm-min - 1px)) {
+  @media (max-width: $screen-xs-max) {
     li.only-in-none-collapse {
       display: none;
     }
@@ -278,9 +278,15 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
   margin-bottom: 20px;
+
+
+  @media (max-width: $screen-phone) {
+    font-size: 15px;
+    line-height: 1.3em;
+  }
 }
 
 .bg-primary {
@@ -532,10 +538,15 @@ ul.normal {
 
 .footer-section {
   .contact-section {
-    padding: 100px;
+    padding: 100px 0;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
 
     @media (max-width: $screen-xs-max) {
-      height: 50px;
+      padding: 50px 0;
     }
   }
 }
@@ -543,11 +554,77 @@ ul.normal {
 #fullpage {
   .fp-controlArrow {
     &.fp-prev {
+      left: 10px;
+      border-width: 38.5px 34px 38.5px 0;
       border-color: transparent $theme-dark transparent transparent;
+      @media (max-width: $screen-md-max) {
+        border-width: 19.25px 17px 19.25px 0;
+      }
     }
 
     &.fp-next {
+      right: 10px;
+      border-width: 38.5px 0 38.5px 34px;
       border-color: transparent transparent transparent $theme-dark;
+      @media (max-width: $screen-md-max) {
+        border-width: 19.25px 0 19.25px 17px;
+      }
     }
+  }
+}
+
+.slogan {
+  font-size: 2em;
+  @include sans-serif-font;
+  font-weight: 700;
+
+  @media (max-width: $screen-phone) {
+    font-size: 1.6em;
+  }
+}
+
+.process-detail {
+  li {
+    font-size: 1.3em;
+    padding-bottom: 10px;
+
+    @media (max-width: $screen-phone) {
+      font-size: 1em;
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+
+      @media (max-width: $screen-phone) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .row.vertical-align {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .section-details h2 {
+    padding: 20px 0;
+  }
+  .slide {
+    img.img-responsive {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .row {
+    margin: 20px 15px;
   }
 }
