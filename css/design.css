@@ -5490,9 +5490,13 @@ h6 {
   font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
   margin-bottom: 20px; }
+  @media (max-width: 480px) {
+    p {
+      font-size: 15px;
+      line-height: 1.3em; } }
 
 .bg-primary {
   background-color: #EE2C38; }
@@ -5726,13 +5730,64 @@ ul.normal {
   line-height: 1.5; }
 
 .footer-section .contact-section {
-  padding: 100px; }
+  padding: 100px 0; }
+  .footer-section .contact-section a {
+    color: #fff;
+    text-decoration: none; }
   @media (max-width: 767px) {
     .footer-section .contact-section {
-      height: 50px; } }
+      padding: 50px 0; } }
 
 #fullpage .fp-controlArrow.fp-prev {
+  left: 10px;
+  border-width: 38.5px 34px 38.5px 0;
   border-color: transparent #222 transparent transparent; }
+  @media (max-width: 1199px) {
+    #fullpage .fp-controlArrow.fp-prev {
+      border-width: 19.25px 17px 19.25px 0; } }
 
 #fullpage .fp-controlArrow.fp-next {
+  right: 10px;
+  border-width: 38.5px 0 38.5px 34px;
   border-color: transparent transparent transparent #222; }
+  @media (max-width: 1199px) {
+    #fullpage .fp-controlArrow.fp-next {
+      border-width: 19.25px 0 19.25px 17px; } }
+
+.slogan {
+  font-size: 2em;
+  font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700; }
+  @media (max-width: 480px) {
+    .slogan {
+      font-size: 1.6em; } }
+
+.process-detail li {
+  font-size: 1.3em;
+  padding-bottom: 10px; }
+  @media (max-width: 480px) {
+    .process-detail li {
+      font-size: 1em; } }
+  .process-detail li .icon {
+    width: 56px;
+    height: 56px; }
+    @media (max-width: 480px) {
+      .process-detail li .icon {
+        width: 32px;
+        height: 32px; } }
+
+@media (min-width: 768px) {
+  .row.vertical-align {
+    display: flex;
+    align-items: center; } }
+
+@media (max-width: 767px) {
+  .section-details h2 {
+    padding: 20px 0; }
+  .slide img.img-responsive {
+    max-width: 300px;
+    margin: 0 auto; } }
+
+@media (max-width: 830px) {
+  .row {
+    margin: 20px 15px; } }
