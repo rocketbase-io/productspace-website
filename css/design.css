@@ -5611,8 +5611,36 @@ aside {
         .navbar-default .brand-logo .navbar-brand {
           margin-left: 23px; } }
 
-img.productspace-logo {
+@media (max-height: 600px) {
+  .fp-tableCell p, .fp-tableCell ul, .fp-tableCell li {
+    font-size: 13px; } }
+
+.section-intro img.productspace-logo {
   max-height: 650px; }
+  @media (max-height: 700px) {
+    .section-intro img.productspace-logo {
+      max-height: 500px; } }
+  @media (max-height: 600px) {
+    .section-intro img.productspace-logo {
+      max-height: 380px; } }
+  @media (max-height: 500px) {
+    .section-intro img.productspace-logo {
+      max-height: 300px; } }
+
+.section-intro .slogan {
+  font-size: 2em;
+  font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700; }
+  @media (max-width: 480px) {
+    .section-intro .slogan {
+      font-size: 1.6em; } }
+  @media (max-height: 600px) {
+    .section-intro .slogan {
+      font-size: 1.6em; } }
+
+@media (max-height: 600px) {
+  .section-intro .fp-tableCell {
+    vertical-align: bottom; } }
 
 .concrete {
   -webkit-background-size: cover;
@@ -5729,6 +5757,10 @@ ul.normal {
   font-size: 16px;
   line-height: 1.5; }
 
+@media (max-height: 600px) {
+  .footer-section p {
+    font-size: 15px; } }
+
 .footer-section .contact-section {
   padding: 100px 0; }
   .footer-section .contact-section a {
@@ -5754,24 +5786,23 @@ ul.normal {
     #fullpage .fp-controlArrow.fp-next {
       border-width: 19.25px 0 19.25px 17px; } }
 
-.slogan {
-  font-size: 2em;
-  font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700; }
-  @media (max-width: 480px) {
-    .slogan {
-      font-size: 1.6em; } }
-
 .process-detail li {
-  font-size: 1.3em;
+  font-size: 17px;
   padding-bottom: 10px; }
   @media (max-width: 480px) {
     .process-detail li {
       font-size: 1em; } }
+  @media (max-height: 600px) {
+    .process-detail li {
+      font-size: 14px; } }
   .process-detail li .icon {
     width: 56px;
     height: 56px; }
     @media (max-width: 480px) {
+      .process-detail li .icon {
+        width: 32px;
+        height: 32px; } }
+    @media (max-height: 600px) {
       .process-detail li .icon {
         width: 32px;
         height: 32px; } }
@@ -5791,3 +5822,13 @@ ul.normal {
 @media (max-width: 830px) {
   .row {
     margin: 20px 15px; } }
+
+@media (max-height: 600px) {
+  .img-fullscreen {
+    max-height: 400px;
+    margin: 0 auto; } }
+
+@media (max-height: 900px) {
+  .img-fullscreen {
+    max-height: 650px;
+    margin: 0 auto; } }
