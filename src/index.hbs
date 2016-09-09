@@ -51,14 +51,45 @@ keyword:        Produkt, Visualisierung, BI, Reporting, Sortiment
                     <img src="images/productspace.png" alt="productspace logo" class="productspace-logo img-center img-responsive">
                     <div class="col-sm-8 col-sm-offset-2">
                         <h1 class="visible-print">ProductSpace visualisiert Ihre Productwelt!</h1>
-                        <p class="slogan">ProductSpace unterstützt die Produktentwicklung. Es visualisiert bestehende und geplante Produkte und hilft dem Team
-                            bei der Zusammenarbeit.</p>
+
+
+                        <div class="slogan">ProductSpace <span id="typed-strings">
+                                                            <p>digitalisiert</p>
+                                                            <p>visualisiert</p>
+                                                            <p>optimiert</p>
+                                                            <p>beschleunigt</p>
+                                                        </span>
+                             <span class="underline-red"><span id="typed"></span></span> Ihre Sortimentsentwicklung!</div>
+
+                        <!-- ProductSpace unterstützt die Produktentwicklung. Es visualisiert bestehende und geplante Produkte und hilft dem Team
+                            bei der Zusammenarbeit. -->
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- usp -->
+            <div class="section fp-auto-height-responsive section-usp" id="section1" data-anchor="start">
+                <div class="container">
+                    <div class="col-sm-4">
+                        <h2>Sortimentsplanung</h2>
+                        <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich...</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>Kollaboration</h2>
+                        <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich...</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>Visualität</h2>
+                        <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich...</p>
                     </div>
                 </div>
             </div>
 
             <!-- details -->
-            <div class="section fp-auto-height-responsive section-details bg-gray" id="section1" data-anchor="about">
+            <div class="section fp-auto-height-responsive section-details bg-gray" id="section2" data-anchor="about">
                 <div class="slide active">
                     <div class="container">
                         <h2 class="text-center">Die Idee von ProductSpace</h2>
@@ -156,7 +187,7 @@ keyword:        Produkt, Visualisierung, BI, Reporting, Sortiment
             </div>
 
             <!-- contact -->
-            <div class="section fp-auto-height bg-dark footer-section" id="section2" data-anchor="contact">
+            <div class="section fp-auto-height bg-dark footer-section" id="section3" data-anchor="contact">
                 <div class="container contact-section">
                     <div class="row">
                         <div class="col-md-12 text-center">
@@ -213,10 +244,27 @@ keyword:        Produkt, Visualisierung, BI, Reporting, Sortiment
                                 .fullpage({
                                     css3: true,
                                     slidesNavigation: true,
-                                    navigationTooltips: ['Die Idee', 'Datenquellen', 'Anwendung', 'Mobile', 'Kommunikation'],
+                                    navigationTooltips: ['Die Idee', 'Kernthemen', 'Datenquellen', 'Anwendung', 'Mobile', 'Kommunikation','Kontakt'],
                                     showActiveTooltip: true,
                                     responsiveWidth: 767
                                 });
+
+                        $("#typed").typed({
+                            stringsElement: $('#typed-strings'),
+                                // typing speed
+                                typeSpeed: 100,
+                                // time before typing starts
+                                startDelay: 1000,
+                                // backspacing speed
+                                backSpeed: 50,
+                                // shuffle the strings
+                                shuffle: false,
+                                // time before backspacing
+                                backDelay: 2000,
+                                // loop
+                                loop: true
+                        });
+
                     });
         </script>
     {{/content}}

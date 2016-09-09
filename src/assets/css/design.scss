@@ -456,16 +456,16 @@ aside {
 // Homepage Header
 .section-intro {
   img.productspace-logo {
-    max-height: 650px;
+    max-height: 550px;
 
     @media (max-height: 700px) {
-      max-height: 500px;
+      max-height: 400px;
     }
     @media (max-height: 600px) {
-      max-height: 380px;
+      max-height: 280px;
     }
     @media (max-height: 500px) {
-      max-height: 300px;
+      max-height: 200px;
     }
   }
   .slogan {
@@ -682,4 +682,37 @@ ul.normal {
     max-height: 650px;
     margin: 0 auto;
   }
+}
+
+
+/* Typed.js */
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  color: #808080;
+}
+#typed {
+  color: #000;
+  text-decoration: none;
+}
+.underline-red {
+  text-decoration: underline;
+  color: $theme-primary;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
