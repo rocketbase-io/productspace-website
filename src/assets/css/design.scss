@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600i,700);
 
 /*
  * include bootstrap
@@ -13,7 +13,7 @@ $theme-dark: #222;
 @import "bower_components/fullpage.js/jquery.fullPage.scss";
 
 .navbar.affix-top {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
 
   .nav > li > a {
     color: #000;
@@ -357,9 +357,10 @@ aside {
 
 .navbar-default {
   background-color: white;
-  border-color: fade($theme-dark, 5%);
+  border: none;
   @include sans-serif-font;
   @include transition-all;
+
   .navbar-header .navbar-brand {
     color: $theme-primary;
     @include sans-serif-font;
@@ -486,12 +487,29 @@ aside {
       vertical-align: bottom;
     }
   }
+  .description {
+    @include sans-serif-font;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    opacity: 0.9;
+  }
 }
 
 
 .concrete {
   @include background-cover;
   background-image: url('../images/concrete-white.jpg');
+  background-position: center;
+  text-align: center;
+  color: $theme-dark;
+}
+
+
+.space-bg {
+  @include background-cover;
+  background-image: url('../images/space-bg.jpg');
   background-position: center;
   text-align: center;
   color: $theme-dark;
@@ -715,4 +733,79 @@ ul.normal {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
+}
+
+/* usps */
+
+.fact {
+  margin: 50px 0;
+  padding: 0;
+  @include sans-serif-font;
+
+  .fact-table {
+    padding-bottom: 20px;
+
+
+    @media (max-width: $screen-md-max) {
+      display: flex;
+      align-items: center;
+    }
+
+    .fact-header {
+      padding: 22px;
+      text-align: center;
+
+
+      @media (max-width: $screen-md-max) {
+        padding: 10px;
+      }
+
+      .fact-title {
+        color: #ffffff;
+        letter-spacing: 2px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+      .fact-icon {
+        img {
+          max-height: 100px;
+        }
+      }
+    }
+  }
+
+  .fact-list {
+    padding: 20px 0 40px 0;
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+
+    @media (max-width: $screen-md-max) {
+      padding: 10px 0 20px 0;
+    }
+
+    ul {
+      padding: 0px;
+      display: table;
+      margin: 0px auto;
+
+      li {
+        list-style: none;
+        border-bottom: 1px solid #EAECEB;
+        color: #bdc3c7;
+        font-size: 16px;
+        line-height: 42px;
+
+        &:last-child {
+          border: none;
+        }
+
+        &.ttip {
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
 }

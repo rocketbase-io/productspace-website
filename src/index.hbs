@@ -25,6 +25,9 @@ keyword:        Produkt, Visualisierung, BI, Reporting, Sortiment
                 <div class="collapse navbar-collapse" id="productspace-navbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
+                            <a href="#focus" onclick="$.fn.fullpage.moveTo('focus', 0);return false;">Fokus</a>
+                        </li>
+                        <li>
                             <a href="#about" onclick="$.fn.fullpage.moveTo('about', 0);return false;">im Detail</a>
                         </li>
                         <li>
@@ -48,18 +51,18 @@ keyword:        Produkt, Visualisierung, BI, Reporting, Sortiment
             <!-- intro -->
             <div class="section active concrete section-intro" id="section0" data-anchor="start">
                 <div class="container">
-                    <img src="images/productspace.png" alt="productspace logo" class="productspace-logo img-center img-responsive">
+                    <img src="images/productspace-alt.png" alt="productspace logo" class="productspace-logo img-center img-responsive">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <h1 class="visible-print">ProductSpace visualisiert Ihre Productwelt!</h1>
-
 
                         <div class="slogan">ProductSpace <span id="typed-strings">
-                                                            <p>digitalisiert</p>
-                                                            <p>visualisiert</p>
-                                                            <p>optimiert</p>
-                                                            <p>beschleunigt</p>
+                                                            <span>digitalisiert</span>
+                                                            <span>visualisiert</span>
+                                                            <span>optimiert</span>
+                                                            <span>beschleunigt</span>
                                                         </span>
                              <span class="underline-red"><span id="typed"></span></span> Ihre Sortimentsentwicklung!</div>
+
+                        <p class="description">Es ist eine Anwendung zur Unterstützung des Produktentwicklungsprozesses für z.B. Versandhändler, Warenhäuser oder produzierende Gewerbe. Es visualisiert bestehende und geplante Produkte und hilft dem Team bei der Zusammenarbeit.</p>
 
                         <!-- ProductSpace unterstützt die Produktentwicklung. Es visualisiert bestehende und geplante Produkte und hilft dem Team
                             bei der Zusammenarbeit. -->
@@ -69,21 +72,82 @@ keyword:        Produkt, Visualisierung, BI, Reporting, Sortiment
 
 
             <!-- usp -->
-            <div class="section fp-auto-height-responsive section-usp" id="section1" data-anchor="start">
+            <div class="section fp-auto-height-responsive space-bg section-usp" id="section1" data-anchor="focus">
                 <div class="container">
-                    <div class="col-sm-4">
-                        <h2>Sortimentsplanung</h2>
-                        <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich...</p>
-                    </div>
+                    <div class="fact">
 
-                    <div class="col-sm-4">
-                        <h2>Kollaboration</h2>
-                        <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich...</p>
-                    </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="fact-table">
+                                <div class="col-lg-12 col-xs-6 fact-header">
+                                    <p class="fact-icon"><img src="images/process/tactics.svg" alt="tactics" ></p>
+                                    <p class="fact-title">Sortimentsplanung</p>
+                                </div>
 
-                    <div class="col-sm-4">
-                        <h2>Visualität</h2>
-                        <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich...</p>
+                                <div class="col-lg-12 col-xs-6 fact-list">
+                                    <ul>
+                                        <li>Zielvorgaben abstecken</li>
+                                        <li>Produktideen erfassen</li>
+                                        <li class="ttip" data-toggle="tooltip" data-placement="top" title="Von der Produktidee über die Zwischenergebnisse von z.B. Lieferanten bis hin zur Veröffentlichung">ges. Produktlebenszyklus<sup>*</sup></li>
+                                        <li>Marktkennzahlen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="fact-table">
+                                <div class="col-lg-12 col-xs-6 fact-header">
+                                    <p class="fact-icon"><img src="images/process/team.svg" alt="team" ></p>
+                                    <p class="fact-title">Kollaboration</p>
+                                </div>
+
+                                <div class="col-lg-12 col-xs-6 fact-list">
+                                    <ul>
+                                        <li>Produktbezogene Diskussionen</li>
+                                        <li>Einfache Abstimmungen</li>
+                                        <li>Grundlage für Meetings</li>
+                                        <li>Unternehmsweite Transparenz</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="fact-table">
+                                <div class="col-lg-12 col-xs-6 fact-header">
+                                    <p class="fact-icon"><img src="images/process/image.svg" alt="image" ></p>
+                                    <p class="fact-title">Visualität</p>
+                                </div>
+
+                                <div class="col-lg-12 col-xs-6 fact-list">
+                                    <ul>
+                                        <li>Produktbild im Vordergrund</li>
+                                        <li class="ttip" data-toggle="tooltip" data-placement="top" title="Eingestellte Fotos der Einkäufer/Designer">Frühzeitige Produktbilder<sup>*</sup></li>
+                                        <li>Ähnlichkeit im Sortiment erkennen</li>
+                                        <li>Digitale Produktleinwände</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="fact-table">
+                                <div class="col-lg-12 col-xs-6 fact-header">
+                                    <p class="fact-icon"><img src="images/process/stopwatch.svg" alt="stopwatch" ></p>
+                                    <p class="fact-title">Geschwindigkeit</p>
+                                </div>
+
+                                <div class="col-lg-12 col-xs-6 fact-list">
+                                    <ul>
+                                        <li>Schnelle Kommunikation</li>
+                                        <li>Vereinfachte Abstimmungsprozesse</li>
+                                        <li>Schnittstellen in Fremdsysteme</li>
+                                        <li>Schnelle Entwicklungsprozesse</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
