@@ -672,6 +672,11 @@ ul.normal {
   }
 }
 
+@media (max-width: $screen-sm-max) {
+  .section-details {
+    padding: 50px 0;
+  }
+}
 @media (max-width: $screen-xs-max) {
   .section-details h2 {
     padding: 20px 0;
@@ -691,13 +696,24 @@ ul.normal {
 }
 
 .img-fullscreen {
-  @media (max-height: 600px) {
-    max-height: 400px;
-    margin: 0 auto;
-  }
-
   @media (max-height: 900px) {
     max-height: 650px;
+    margin: 0 auto;
+  }
+  @media (max-height: 800px) {
+    max-height: 550px;
+    margin: 0 auto;
+  }
+  @media (max-height: 700px) {
+    max-height: 450px;
+    margin: 0 auto;
+  }
+  @media (max-height: 600px) {
+    max-height: 350px;
+    margin: 0 auto;
+  }
+  @media (max-height: 500px) {
+    max-height: 250px;
     margin: 0 auto;
   }
 }
@@ -750,6 +766,10 @@ ul.normal {
       display: flex;
       align-items: center;
     }
+    @media (max-width: $screen-xs-max) {
+      display: block;
+      align-items: inherit;
+    }
 
     .fact-header {
       padding: 22px;
@@ -784,6 +804,17 @@ ul.normal {
     @media (max-width: $screen-md-max) {
       padding: 10px 0 20px 0;
     }
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 10px;
+    }
+
+    .fact-title {
+      color: #000;
+      letter-spacing: 2px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 700;
+    }
 
     ul {
       padding: 0px;
@@ -793,9 +824,9 @@ ul.normal {
       li {
         list-style: none;
         border-bottom: 1px solid #EAECEB;
-        color: #bdc3c7;
         font-size: 16px;
         line-height: 42px;
+        padding: 0 10px;
 
         &:last-child {
           border: none;
