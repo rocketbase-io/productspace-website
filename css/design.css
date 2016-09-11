@@ -5827,6 +5827,10 @@ ul.normal {
     display: flex;
     align-items: center; } }
 
+@media (max-width: 991px) {
+  .section-details {
+    padding: 50px 0; } }
+
 @media (max-width: 767px) {
   .section-details h2 {
     padding: 20px 0; }
@@ -5838,14 +5842,29 @@ ul.normal {
   .row {
     margin: 20px 15px; } }
 
-@media (max-height: 600px) {
-  .img-fullscreen {
-    max-height: 400px;
-    margin: 0 auto; } }
-
 @media (max-height: 900px) {
   .img-fullscreen {
     max-height: 650px;
+    margin: 0 auto; } }
+
+@media (max-height: 800px) {
+  .img-fullscreen {
+    max-height: 550px;
+    margin: 0 auto; } }
+
+@media (max-height: 700px) {
+  .img-fullscreen {
+    max-height: 450px;
+    margin: 0 auto; } }
+
+@media (max-height: 600px) {
+  .img-fullscreen {
+    max-height: 350px;
+    margin: 0 auto; } }
+
+@media (max-height: 500px) {
+  .img-fullscreen {
+    max-height: 250px;
     margin: 0 auto; } }
 
 /* Typed.js */
@@ -5899,6 +5918,10 @@ ul.normal {
       .fact .fact-table {
         display: flex;
         align-items: center; } }
+    @media (max-width: 767px) {
+      .fact .fact-table {
+        display: block;
+        align-items: inherit; } }
     .fact .fact-table .fact-header {
       padding: 22px;
       text-align: center; }
@@ -5921,6 +5944,15 @@ ul.normal {
     @media (max-width: 1199px) {
       .fact .fact-list {
         padding: 10px 0 20px 0; } }
+    @media (max-width: 767px) {
+      .fact .fact-list {
+        margin-bottom: 10px; } }
+    .fact .fact-list .fact-title {
+      color: #000;
+      letter-spacing: 2px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 700; }
     .fact .fact-list ul {
       padding: 0px;
       display: table;
@@ -5928,9 +5960,9 @@ ul.normal {
       .fact .fact-list ul li {
         list-style: none;
         border-bottom: 1px solid #EAECEB;
-        color: #bdc3c7;
         font-size: 16px;
-        line-height: 42px; }
+        line-height: 42px;
+        padding: 0 10px; }
         .fact .fact-list ul li:last-child {
           border: none; }
         .fact .fact-list ul li.ttip {
