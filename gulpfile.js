@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     hb = require('gulp-hb'),
     minifyHTML = require('gulp-minify-html'),
     sass = require('gulp-sass'),
-    minifyCss = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
     uncss = require('gulp-uncss'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
@@ -66,12 +66,12 @@ gulp.task('handlebars', function () {
 gulp.task('sass', ['bower'], function () {
     return gulp.src('./src/assets/css/design.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./build/css'))
         .pipe(uncss({
             html: ['./build/*.html'],
             ignore: [/(tooltip|popover|scrollUp|collapse|collapsing|nav|btn|form|alert|fp-)+.*/]
         }))
-        .pipe(minifyCss({compatibility: 'ie8'}))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('./build/css'))
         .pipe(browserSync.reload({stream: true}));
 });
 
@@ -91,9 +91,6 @@ gulp.task('bower', function () {
 gulp.task('watch', function () {
     watch(['./src/**/*.hbs', './src/data/**/*.js', './src/handlebars/**/*.js'], function () {
         gulp.run('handlebars');
-    });
-    watch(['./src/assets/css/**/*.less'], function () {
-        gulp.run('less');
     });
     watch(['./src/assets/css/**/*.scss'], function () {
         gulp.run('sass');
