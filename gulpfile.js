@@ -68,7 +68,7 @@ gulp.task('sass', ['bower'], function () {
         .pipe(sass())
         .pipe(uncss({
             html: ['./build/*.html'],
-            ignore: [/(tooltip|popover|scrollUp|collapse|collapsing|nav|btn|form|alert|fp-)+.*/]
+            ignore: [/(tooltip|popover|scrollUp|collapse|collapsing|nav|btn|form|alert|fp-|col-)+.*/]
         }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('./build/css'))
